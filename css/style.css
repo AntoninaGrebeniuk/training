@@ -760,3 +760,26 @@ input::placeholder {
 
   color: var(--text-color);
 }
+
+.back-to-top {
+  background: hsla(64, 65%, 73%, 0.664);
+  border-radius: 50%;
+  position: fixed;
+  bottom: 50px;
+  padding: 10px 12px;
+  right: 50px;
+  cursor: pointer;
+  transition: 0.3s all;
+  opacity: 0;
+  color: var(--placeholder-color);
+}
+
+.back-to-top.active {
+  opacity: 1;
+  bottom: 50px;
+  transition: 0.3s all;
+}
+
+.arrow-top {
+  fill: currentColor;
+}
