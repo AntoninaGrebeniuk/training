@@ -54,10 +54,10 @@
     <!-- Main -->
     <main>
       <!-- Hero -->
-      <section class="hero-section">
+      <section class="hero-section" id="about">
         <div class="container hero">
           <div class="hero-box">
-            <h1 class="hero-title" id="about">Enjoy Your Favorite Food From Anywhere</h1>
+            <h1 class="hero-title">Enjoy Your Favorite Food From Anywhere</h1>
             <p class="hero-text">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in
               eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum
@@ -67,38 +67,30 @@
           </div>
           <!-- Галерея -->
           <div class="gallery-box">
-            <button type="button" class="gallery-btn left">
-              <svg width="29" height="16" class="btn-left">
-                <use href="./images/icons.svg#icon-left-arrow"></use>
-              </svg>
-            </button>
-            <ul class="list">
-              <li>
-                <img src="" alt="" />
-              </li>
-              <li>
-                <img src="" alt="" />
-              </li>
-              <li>
-                <img src="" alt="" />
-              </li>
-            </ul>
-            <button type="button" class="gallery-btn right">
-              <svg width="40" height="48" class="btn-right">
-                <use href="./images/icons.svg#icon-right-arrow"></use>
-              </svg>
-            </button>
+            <div class="slayder">
+              <ul class="img-list list">
+                <li class="img-item">
+                  <img src="./images/foto_1.jpg" alt="dish" width="528" />
+                </li>
+                <li class="img-item">
+                  <img src="./images/foto_2.jpg" alt="dish" width="528" />
+                </li>
+                <li class="img-item">
+                  <img src="./images/foto_3.jpg" alt="dish" width="528" />
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </section>
 
       <!-- Offerings -->
-      <section class="offer section">
+      <section class="offer section" id="service">
         <div class="offer container">
           <img src="./images/apple.png" alt="apple" width="550" />
 
           <div class="offer-box">
-            <h2 class="offer-title" id="service">What’s Special About Our Offerings</h2>
+            <h2 class="offer-title">What’s Special About Our Offerings</h2>
             <p class="offer-text">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in
               eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum
@@ -126,7 +118,7 @@
       </section>
 
       <!-- Favorites -->
-      <section class="section">
+      <section class="section" id="menu">
         <div class="container">
           <h2 id="menu" class="menu-title">Some of Our Favorites</h2>
           <p class="menu-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
@@ -202,7 +194,7 @@
       </section>
 
       <!-- Subscribe -->
-      <section class="subscribe section">
+      <section class="subscribe section" id="contact">
         <div class="subscribe container">
           <div class="subscribe-box">
             <h2 class="subscribe-title" id="contact">Subscribe To Get Special Offers</h2>
@@ -258,19 +250,24 @@
           </ul>
 
           <form action="#" class="footer-form" autocomplete="off">
-            <label class="form-field">
-              <span class="label"> Subscribe </span>
-              <input
-                type="email"
-                name="email"
-                class="footer-input"
-                placeholder="Enter your email"
-              />
-              <button type="submit" class="footer-btn">Subscribe</button>
+            <div class="form-thumb">
+              <label class="form-field">
+                <span class="label"> Subscribe </span>
+                <input
+                  type="email"
+                  name="email"
+                  class="footer-input"
+                  placeholder="Enter your email"
+                />
+              </label>
 
+              <button type="submit" class="footer-btn">Subscribe</button>
+            </div>
+
+            <div>
               <span class="form-text">By subscribing you agree to with our</span>
               <a href="#" class="form-link link">Privacy Policy</a>
-            </label>
+            </div>
           </form>
         </div>
 

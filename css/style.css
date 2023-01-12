@@ -211,44 +211,7 @@ img {
 
   border: 26px solid var(--yellow-color);
   border-radius: 50%;
-}
-
-.gallery-btn {
-  width: 40px;
-  height: 48px;
-  background-color: var(--background-color);
-
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
-  border-radius: 8px;
-  /* border: none; */
-  cursor: pointer;
-}
-
-.gallery-btn.left {
-  position: absolute;
-  left: -35px;
-  top: 50%;
-  transform: translateY(-50%);
-
-  display: flex;
-  align-items: start;
-}
-
-.gallery-btn.right {
-  position: absolute;
-  right: -35px;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-.btn-left {
-  width: 100%;
-  height: 100%;
-}
-
-.btn-right {
-  width: 100%;
-  height: 100%;
+  overflow: hidden;
 }
 
 /* -----OFFERINGS----- */
@@ -438,9 +401,7 @@ img {
   width: 501px;
   padding: 14px;
   background-color: var(--background-color);
-  border-top-right-radius: 27px;
-  border-bottom-right-radius: 27px;
-  border-bottom-left-radius: 27px;
+  border-radius: 0 30px 30px 30px;
 }
 
 .customer-item:first-child {
@@ -563,14 +524,15 @@ input::placeholder {
 
   color: var(--text-color);
   background-color: var(--accent-color);
-  border: none;
+  border: transparent;
   border-radius: 30px;
   cursor: pointer;
 }
 
 .subscribe-btn:hover,
 .subscribe-btn:focus {
-  background-color: var(--hover-color);
+  background-color: var(--background-color);
+  border: 0.854167px solid var(--dark-green-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
@@ -650,17 +612,30 @@ input::placeholder {
 
 .footer-form {
   display: flex;
+
   flex-direction: column;
   margin-right: 0;
   margin-left: auto;
-  width: 399px;
+  width: 400px;
 }
-.form-field {
+
+.form-thumb {
   margin-bottom: 12px;
+}
+
+.form-field {
+  /* display: inline-flex;
+  flex-direction: column; */
+
+  margin-right: 13px;
+  margin-bottom: 12px;
+  width: 279px;
 }
 .label {
   display: block;
+
   margin-bottom: 12px;
+
   font-weight: 500;
   font-size: 14px;
   line-height: 1.5;
@@ -668,8 +643,6 @@ input::placeholder {
   color: var(--text-color);
 }
 .footer-input {
-  margin-right: 13px;
-  margin-bottom: 12px;
   padding-left: 12px;
   width: 279px;
   height: 42px;
@@ -706,8 +679,8 @@ input::placeholder {
 
 .footer-btn:hover,
 .footer-btn:focus {
-  border-color: var(--hover-border);
-  background-color: var(--background-color);
+  border-color: var(--accent-color);
+  background-color: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
@@ -776,7 +749,7 @@ input::placeholder {
   height: 1px;
   position: absolute;
   right: 0;
-  bottom: 2px;
+  bottom: 1px;
   background-color: var(--dark-green-color);
 }
 
