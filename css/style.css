@@ -761,6 +761,7 @@ input::placeholder {
   color: var(--text-color);
 }
 
+/* Прокрутка вверх */
 .back-to-top {
   background: hsla(64, 65%, 73%, 0.664);
   border-radius: 50%;
@@ -772,6 +773,15 @@ input::placeholder {
   transition: 0.3s all;
   opacity: 0;
   color: var(--placeholder-color);
+
+  /* new */
+
+  width: 70px;
+  height: 80px;
+  background-image: url(../images/ice80.png);
+  background-repeat: no-repeat;
+  background-position: -5px -10px;
+  background-size: 80px 80px;
 }
 
 .back-to-top.active {
@@ -782,4 +792,14 @@ input::placeholder {
 
 .arrow-top {
   fill: currentColor;
+}
+
+/* Новый код */
+.back-to-top-text {
+  position: absolute;
+  bottom: 5px;
+  left: 23px;
+  display: block;
+  /* text-align: center; */
+  font-weight: 600;
 }
